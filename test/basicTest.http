@@ -1,0 +1,30 @@
+### GET Test
+
+GET  http://127.0.0.1:3000 HTTP/1.1
+
+### GET Single TODO By Id
+GET  http://127.0.0.1:3000/4 HTTP/1.1
+
+### ADD ANOTHER TODO
+
+POST http://127.0.0.1:3000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Another TODO",
+    "desc": "New TODO Created"
+}
+
+### DELETE TODO BY ID
+DELETE http://127.0.0.1:3000/4 HTTP/1.1
+
+
+### UPDATE SINGLE TODO
+
+PUT http://127.0.0.1:3000/4 HTTP/1.1
+Content-Type: application/json
+
+{
+   "name":"Updated TODO",
+   "desc": "This TODO Is Updated"
+}
