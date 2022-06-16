@@ -1,9 +1,9 @@
 ### GET Test
 
-GET  http://127.0.0.1:3000 HTTP/1.1
+GET  http://127.0.0.1:3000/v1 HTTP/1.1
 
 ### GET Single TODO By Id
-GET  http://127.0.0.1:3000/4 HTTP/1.1
+GET  http://127.0.0.1:3000/3 HTTP/1.1
 
 ### ADD ANOTHER TODO
 
@@ -28,3 +28,6 @@ Content-Type: application/json
    "name":"Updated TODO",
    "desc": "This TODO Is Updated"
 }
+
+### DB TEST
+GET http://127.0.0.1:3000/time HTTP/1.1

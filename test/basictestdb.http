@@ -1,0 +1,31 @@
+
+### GET ALL TODOS
+GET http://127.0.0.1:3000/v2 HTTP/1.1
+
+### GET SINGLE TODO BY ID
+GET http://127.0.0.1:3000/v2/5 HTTP/1.1
+
+### ADD TODO
+POST http://localhost:3000/v2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "TODO Added FOR FUN 9",
+    "description": "New ToDo Description",
+    "gross_amount" : 3
+
+}
+
+
+### UPDATE SINGLE TODO
+PUT http://127.0.0.1:3000/v2/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Updated TODO",
+    "description": "Updated TODO Discription"
+}
+
+### REMOVE SINGLE TODO
+DELETE http://127.0.0.1:3000/v2/3 HTTP/1.1
+
